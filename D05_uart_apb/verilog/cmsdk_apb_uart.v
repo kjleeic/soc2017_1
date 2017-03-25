@@ -48,4 +48,41 @@ module cmsdk_apb_uart (
 );
 
 
+	// By KJLEE
+	localparam ADDR_BAUD		= 10'd4;
+	localparam ADDR_CTRL		= 10'd2;
+	localparam ADDR_DATA		= 10'd0;
+	
+	localparam DO_WRITE		= 1'b1;
+	localparam DO_READ		= 1'b0;
+	
+	localparam REG_ENABLE	= 1'b1;
+	localparam REG_DISABLE	= 1'b0;
+	
+	reg	[7:0]		REG_DATA_R;
+	reg	[7:0]		REG_DATA_T;
+	
+	reg	[6:0]		REG_CTRL;
+	
+	reg	[19:0]	REG_BAUDDIV;
+	
+	wire	output_;
+	
+	assign output_ = {PRDATA, PREADY, TXD, TXEN};
+	
+	always@ (posedge PCLK)
+	begin
+		casex ({PADDR, PWRITE, PSEL, PENABLE})
+		//	[PADDR]			[PWRITE]		[PSEL]	[PENABLE]	:					[PRDATA]			[PREADY]	[TXD]			
+			{ADDR_BAUD,		DO_WRITE,	1'bx,		REG_ENABLE}	: output_ <=	{31'b0,			1'b1,		};
+			{ADDR_BAUD,		DO_WRITE,	1'bx,		REG_DISABLE}: output_ <=	{31'b0,			1'b0,		};
+			{ADDR_BAUD,		DO_READ,		1'bx,		REG_ENABLE}	: output_ <=	{REG_BAUDDIV,	1'b1,		};
+			{ADDR_BAUD,		DO_READ,		1'bx,		REG_DISABLE}: output_ <=	{31b'x,			1'b0};
+	
+		endcase
+	end
+
+
+
+
 endmodule

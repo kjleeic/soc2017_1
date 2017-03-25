@@ -38,7 +38,7 @@ cmsdk_apb_uart uart0(
   .PRESETn	(NRST),  // Reset
 
   .PSEL		(U0_PSEL),     // Device select
-  .PADDR	(U0_PADDR),    // Address
+  .PADDR		(U0_PADDR),    // Address
   .PENABLE	(U0_PENABLE),  // Transfer control
   .PWRITE	(U0_PWRITE),   // Write control
   .PWDATA	(U0_PWDATA),   // Write data
@@ -56,7 +56,7 @@ sg_uart_tx sg_uart_tx(
   .RESETn	(NRST),
 
   .PSEL		(U0_PSEL),     	// Device select
-  .PADDR	(U0_PADDR),    	// Address
+  .PADDR		(U0_PADDR),    	// Address
   .PENABLE	(U0_PENABLE),  	// Transfer control
   .PWRITE	(U0_PWRITE),   	// Write control
   .PWDATA	(U0_PWDATA),   	// Write data
@@ -78,6 +78,12 @@ cmsdk_clkreset u_cmsdk_clkreset(
   begin
     #(PERIOD*10000)
     $finish();
+  end
+  
+  // By KJLEE
+  initial
+  begin
+		U0_PRDATA <= 32'b0;
   end
  
 

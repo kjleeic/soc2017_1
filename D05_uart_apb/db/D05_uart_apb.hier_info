@@ -1,0 +1,5 @@
+|D05_uart_apb
+A => ~NO_FANOUT~
+B << B.DB_MAX_OUTPUT_PORT_TYPE
+
+

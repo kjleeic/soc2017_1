@@ -1,0 +1,85 @@
+# do D05_uart_apb_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work rtl_work 
+# Copying /home/kjlee/altera_lite/15.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /home/kjlee/altera_lite/15.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+/home/kjlee/study/soc/D05_uart_apb {/home/kjlee/study/soc/D05_uart_apb/D05_uart_apb.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:58:21 on Mar 24,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/kjlee/study/soc/D05_uart_apb" /home/kjlee/study/soc/D05_uart_apb/D05_uart_apb.v 
+# -- Compiling module D05_uart_apb
+# 
+# Top level modules:
+# 	D05_uart_apb
+# End time: 23:58:21 on Mar 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model {/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_tx.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:58:21 on Mar 24,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model" /home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_tx.v 
+# -- Compiling module sg_uart_tx
+# 
+# Top level modules:
+# 	sg_uart_tx
+# End time: 23:58:21 on Mar 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/kjlee/study/soc/D05_uart_apb/verilog {/home/kjlee/study/soc/D05_uart_apb/verilog/cmsdk_apb_uart.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:58:21 on Mar 24,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/kjlee/study/soc/D05_uart_apb/verilog" /home/kjlee/study/soc/D05_uart_apb/verilog/cmsdk_apb_uart.v 
+# -- Compiling module cmsdk_apb_uart
+# 
+# Top level modules:
+# 	cmsdk_apb_uart
+# End time: 23:58:21 on Mar 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model {/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/cmsdk_clkreset.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:58:21 on Mar 24,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model" /home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/cmsdk_clkreset.v 
+# -- Compiling module cmsdk_clkreset
+# 
+# Top level modules:
+# 	cmsdk_clkreset
+# End time: 23:58:21 on Mar 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model {/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_rx.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:58:21 on Mar 24,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model" /home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_rx.v 
+# -- Compiling module sg_uart_rx
+# 
+# Top level modules:
+# 	sg_uart_rx
+# End time: 23:58:21 on Mar 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model {/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_rx_check.v}
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:58:21 on Mar 24,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model" /home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_rx_check.v 
+# -- Compiling module sg_uart_rx_check
+# 
+# Top level modules:
+# 	sg_uart_rx_check
+# End time: 23:58:21 on Mar 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_uart_tx
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_uart_tx 
+# Start time: 23:58:21 on Mar 24,2017
+# ** Error: (vsim-3170) Could not find '/home/kjlee/study/soc/D05_uart_apb/simulation/modelsim/rtl_work.tb_uart_tx'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./D05_uart_apb_run_msim_rtl_verilog.do PAUSED at line 16
+# End time: 00:00:53 on Mar 25,2017, Elapsed time: 0:02:32
+# Errors: 1, Warnings: 0

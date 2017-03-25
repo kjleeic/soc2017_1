@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module sg_uart_rx(
+module sg_uart_rx_check(
 
   input  wire		CLK,		// clock
   input  wire		RESETn,		// reset (negative active)

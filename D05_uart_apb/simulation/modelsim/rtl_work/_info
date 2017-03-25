@@ -1,0 +1,137 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/kjlee/study/soc/D05_uart_apb/simulation/modelsim
+vcmsdk_apb_uart
+Z1 !s110 1490367501
+!i10b 1
+!s100 9Bfk6Af3F_8J5cM5B1@Vj1
+IE7kHC^bDgkWc9TdVBQcH@2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1490021634
+8/home/kjlee/study/soc/D05_uart_apb/verilog/cmsdk_apb_uart.v
+F/home/kjlee/study/soc/D05_uart_apb/verilog/cmsdk_apb_uart.v
+L0 30
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1490367501.000000
+!s107 /home/kjlee/study/soc/D05_uart_apb/verilog/cmsdk_apb_uart.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/kjlee/study/soc/D05_uart_apb/verilog|/home/kjlee/study/soc/D05_uart_apb/verilog/cmsdk_apb_uart.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+/home/kjlee/study/soc/D05_uart_apb/verilog
+vcmsdk_clkreset
+R1
+!i10b 1
+!s100 ;7^BBeRD95hfVHORZ3jb=3
+IimXm?EedS[B2b9EF7mSmP2
+R2
+R0
+w1467180896
+8/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/cmsdk_clkreset.v
+F/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/cmsdk_clkreset.v
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/cmsdk_clkreset.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model|/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/cmsdk_clkreset.v|
+!i113 1
+R5
+Z6 !s92 -vlog01compat -work work +incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model
+vD05_uart_apb
+R1
+!i10b 1
+!s100 2nTBbnbnJHH^Va[eiX1dM1
+IKnJPZ412CKK@Tz7e4]<NO2
+R2
+R0
+w1490365276
+8/home/kjlee/study/soc/D05_uart_apb/D05_uart_apb.v
+F/home/kjlee/study/soc/D05_uart_apb/D05_uart_apb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/kjlee/study/soc/D05_uart_apb/D05_uart_apb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/kjlee/study/soc/D05_uart_apb|/home/kjlee/study/soc/D05_uart_apb/D05_uart_apb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+/home/kjlee/study/soc/D05_uart_apb
+n@d05_uart_apb
+vsg_uart_rx
+R1
+!i10b 1
+!s100 lmO[zb383FRO6l`>G2l231
+I7AW[gGRR>Qb4@nLS78iEU1
+R2
+R0
+w1490021216
+8/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_rx.v
+F/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_rx.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model|/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_rx.v|
+!i113 1
+R5
+R6
+vsg_uart_rx_check
+R1
+!i10b 1
+!s100 dUW=]j:nHEC2oQSIa4G^Q0
+I_ZDPPo:kUch6;z?Ue4noJ3
+R2
+R0
+w1490365470
+8/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_rx_check.v
+F/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_rx_check.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_rx_check.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model|/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_rx_check.v|
+!i113 1
+R5
+R6
+vsg_uart_tx
+R1
+!i10b 1
+!s100 R6Kg_A8C]?la?B=A6OM:K3
+Ii0OHmR>U4Ok2l_4<Y]JN^3
+R2
+R0
+w1490021112
+8/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_tx.v
+F/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_tx.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model|/home/kjlee/study/soc/D05_uart_apb/rtl_sim/model/sg_uart_tx.v|
+!i113 1
+R5
+R6

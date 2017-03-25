@@ -1,0 +1,8 @@
+module D05_uart_apb(input A, output B);
+	wire A;
+	reg B;
+	
+	always@ (*)
+		B <= ~B;
+
+endmodule

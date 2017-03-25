@@ -44,17 +44,23 @@ begin
 
 	{10'd0 , 1'bx, 1'bx}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'dx, 1'b0, 1'b0, 1'b0, 32'hxxxx_xxxx, 1'b1, 1'b0};	// Reset 
 	{10'd1 , 1'bx, 1'bx}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'd4, 1'b1, 1'b1, 1'b0, 32'h0000_0020, 1'b1, 1'b0};	// Baudrate setting 0
+
 	{10'd2 , 1'b0, 1'bx}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'd4, 1'b1, 1'b1, 1'b1, 32'h0000_0020, 1'b0, 1'b0};	// Baudrate setting 1 (wait)
 	{10'd2 , 1'b1, 1'bx}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'd4, 1'b1, 1'b1, 1'b1, 32'h0000_0020, 1'b1, 1'b0};	// Baudrate setting 1 (ready)
+
 	{10'd3 , 1'bx, 1'bx}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'dx, 1'b0, 1'b0, 1'b0, 32'hxxxx_xxxx, 1'b1, 1'b0};	// Dummy cycle
 	{10'd4 , 1'bx, 1'bx}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'd2, 1'b1, 1'b1, 1'b0, 32'h0000_0026, 1'b1, 1'b0};	// CTRL setting 0
+
 	{10'd5 , 1'b0, 1'bx}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'd2, 1'b1, 1'b1, 1'b1, 32'h0000_0026, 1'b0, 1'b0};	// CTRL setting 1 (wait)
 	{10'd5 , 1'b1, 1'bx}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'd2, 1'b1, 1'b1, 1'b1, 32'h0000_0026, 1'b1, 1'b0};	// CTRL setting 1 (ready)
+
 	{10'd6 , 1'bx, 1'bx}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'dx, 1'b0, 1'b0, 1'b0, 32'hxxxx_xxxx, 1'b1, 1'b0};	// Dummy cycle
 	{10'd7 , 1'bx, 1'bx}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'd0, 1'b0, 1'b1, 1'b0, 32'hxxxx_xxxx, 1'b1, 1'b0};	// RX data read 0
+
 	{10'd8 , 1'b0, 1'bx}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'd0, 1'b0, 1'b1, 1'b1, 32'hxxxx_xxxx, 1'b0, 1'b0};	// RX data read 1 (wait)
 	{10'd8 , 1'b1, 1'b0}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'd0, 1'b0, 1'b1, 1'b1, 32'hxxxx_xxxx, 1'b0, 1'b1};	// RX data read 1 (ready, invalid)
 	{10'd8 , 1'b1, 1'b1}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'd0, 1'b0, 1'b1, 1'b1, 32'hxxxx_xxxx, 1'b1, 1'b0};	// RX data read 1 (ready, valid)
+
 	{10'd13, 1'bx, 1'bx}:	{PADDR, PWRITE, PSEL, PENABLE, PWDATA, INDEX_INC, INDEX_DEC} <= {10'dx, 1'b0, 1'b0, 1'b0, 32'hxxxx_xxxx, 1'b0, 1'b0};	// Finish
 
 	endcase
